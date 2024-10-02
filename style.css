@@ -1,0 +1,166 @@
+/* CSS Reset */
+*{   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.3;
+    background-color: white;
+    color: #242424
+    
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #1c1c1c;
+    padding: 2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+
+header {
+    background-color: #10290c;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+header .first-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+/* About Me */
+
+#about {
+    background-color: white;
+    padding: 50px;
+}
+
+#about h2 {
+    text-align: center;
+    color:#10290c;
+    margin-bottom: 30px;
+}
+
+#about .biography, .achievements, .goals {
+    margin-bottom: 10px;
+    text-wrap: balance;
+}
+
+.second-img {
+    width: 200px;
+    height:auto;
+    margin: 10px;
+}
+
+/* Achievements */
+
+#achievements {
+    background-color: #e6e6e6;
+    padding: 50px;
+}
+
+#achievements h2 {
+    text-align: center;
+    color: #10290c;
+    margin-bottom: 30px;
+}
+
+#achievements ul {
+    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.third-img{
+    width: 300px;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Contact */
+#contact {
+    background-color: white;
+    padding: 30px;
+
+}
+
+#contact h2 {
+    color: #10290c;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 20px;
+    border: 1px solid #7a7a7a;
+    border-radius: 3px;
+    margin-bottom: 10px;
+} 
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: beige;
+}
+
+/* Footer */
+footer {
+    background-color:#10290c;
+    color: white; 
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.icon {
+    font-size: 30px;
+    color: white;
+}
