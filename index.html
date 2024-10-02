@@ -24,14 +24,62 @@
 
     <header> <!-- Header -->
       <h1> Welcome to My Personal Portfolio! </h1>
-      <img src="arvidlindquist1.jpg" alt="Arvid Lindquist" class="first-img">
+      <img src="arvidlindquist1.jpg" alt="Myself, Arvid Lindquist in a football game photo taken of side profile" class="first-img">
     </header>
 
-  
+    <section id="about">  <!-- About Me section -->
+      <h2> About Me </h2>
+      <div class="biography">
+        <h3>Biography</h3> 
+        <p> Hi! My name is Arvid Lindquist and I'm 19 years old. I'm Swedish, but was born in Maryland, USA. I enjoy playing football and I play at the highest academy level in Sweden, currently for IFK Goteborg U19. I'm currently studying at Kristianstad University and have experience in programming, specifically C# aswell as HTML & CSS. I have one sister who I live with in an apartment in Gothenburg and my parents live in the US. I have also lived in the US for most of my life, and graduated from high school there in 2023! </p>
+      </div>
+      <div class="hobbies"> 
+        <h3>Hobbies</h3>
+        <p> My hobbies are of course football, I play football everyday and have played it for around 13 years for different clubs! I also love traveling, playing video games, listening to music,  and I'm very into fashion , particularly streetwear. </p>
+      </div>
+      <div class="goals">
+        <h3> Future Goals </h3>
+        <p> In the future, my current main goal is to sign my first professional contract with a club whether it is with IFK Goteborg or another club in the US. I also plan to go into a IT Major next year that I can do at half paced, while playing football. </p>
+      </div>
+      <img src="fashion.jpg" class="second-img">
+    </section>
 
+    <section id="achievments"> <!-- Achievments section-->
+      <h2> My Personal Achievments</h2>
+      <ul style="list-style-type:square">
+        <li> Graduated from Urbana High School with straight A's in all my classes in 2023 </li>
+        <li> <strong> Called up to represent the USA Football National Team U15 in 2020 </strong></li>
+        <li> Made my senior debut for IFK Goteborg second team in 2024 </li>
+      </ul>
+      <img src="nationalteam.jpg" class="third-img">
+    </section>
 
+    <section id="contact"> <!-- Contact Form section-->
+      <h2> Contact Me </h2>
+      <form action="mailto:arvidlindquist@live.com" method="post">
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" required>
 
+        <label for="message"> Message: </label>
+        <textarea id="message" name="message" required> </textarea>
 
+        <button type="submit"> Submit </button>
+
+      </form>
+
+    </section>
+
+    <footer> <!-- Footer section-->
+      <p> &copy; 2024 Arvid Lindquist. </p>
+      <p> <a href="#"> Privacy Policy </a> --- <a href="#">Terms of Service</a></p>
+      <a href="https://www.instagram.com/arvid.lindquist" target="_blank"> 
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </footer>
 </body>
 </html>
