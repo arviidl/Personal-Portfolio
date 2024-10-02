@@ -41,6 +41,10 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+nav ul li a:focus {
+    outline: 5px solid #10290c;
+}
+
 /* Header */
 
 header {
@@ -66,23 +70,35 @@ header .first-img {
     background-color: white;
     padding: 50px;
 }
-
 #about h2 {
     text-align: center;
-    color:#10290c;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color:#714e35;
+}
+#about h3 {
+    color:#714e35;
+}
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-#about .biography, .achievements, .goals {
-    margin-bottom: 10px;
-    text-wrap: balance;
+.text-container {
+    flex: 1;
+    max-width: 50%;
+    padding-right:30px
+}
+
+.image-container {
+    max-width: 50%;
 }
 
 .second-img {
-    width: 200px;
-    height:auto;
-    margin: 10px;
+    max-width: 100%;
+    height: 500px;
 }
+
 
 /* Achievements */
 
@@ -93,7 +109,7 @@ header .first-img {
 
 #achievements h2 {
     text-align: center;
-    color: #10290c;
+    color: #714e35;
     margin-bottom: 30px;
 }
 
@@ -119,7 +135,7 @@ header .first-img {
 }
 
 #contact h2 {
-    color: #10290c;
+    color: #714e35;
     text-align: center;
 }
 
@@ -159,8 +175,43 @@ footer {
     padding: 10px 0;
 
 }
-
-.icon {
-    font-size: 30px;
-    color: white;
+.instagram {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease;
 }
+.instagram:hover {
+    color:#8134AF
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+header .first-img {
+    width: 150px;
+    height: 150px;
+}
+.about-container {
+    flex-direction: column;
+}
+.text-container, .image-container {
+    max-width: 100%;
+    padding-right:0;
+}
+.second-img{
+    height: auto;
+    max-width: 100%
+}
+.third-img{
+    width: 100%
+}
+form {
+    max-width: 100%;
+    padding: 0 20px;
+}
+}
+
